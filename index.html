@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Niskala</title>
+        <link rel="stylesheet" href="./src/styles/output.css">
+    </head>
+    <body>
+        <header class="bg-white fixed top-0 w-full z-10 bg-opacity-5">
+            <nav class=" ">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <button onclick="backToTopScroll()" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./public/img/navbar-icon.png" class="" alt="Flowbite Logo" />
+                    <span class="self-center text-lg font-semibold whitespace-nowrap text-white">Niskala and Partners</span>
+                </button>
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-sm">
+                        <li>
+                            <button onclick="backToTopScroll()" class="block py-2 px-3 text-white  rounded md:bg-transparent" aria-current="page">HOME</button>
+                        </li>
+                        <li>
+                            <button onclick="practiceAreaScroll()" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 ">PRACTICE AREA</button>
+                        </li>
+                        <li>
+                            <button onclick="AdvocateScroll()" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 ">ADVOCATE</button>
+                        </li>
+                        <li>
+                            <button onclick="aboutUsScroll()" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 ">ABOUT US</button>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            
+            </nav>
+        </header>
+
+        <div class="relative overflow-hidden  bg-cover bg-no-repeat px-8 py-16 lg:p-32 min-h-96 lg:h-[800px]" style="background-image: url('./public/img/bg-hero.jpg');">
+            <div class="px-4 mx-auto max-w-screen-xl text-start py-32 lg:py-16">
+                <h1 class="mb-4 text-6xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-[88px] sm:w-full  lg:w-[50%]">Decades of Legal Excellence</h1>
+                <p class="mb-8 font-normal text-gray-300 text-2xl lg:text-[36px]">With 18 years of experience
+                </p>
+                <div class="flex flex-row space-y-4 sm:justify-start sm:space-y-0">
+                    <button onclick="heroScroll()" class="inline-flex justify-start items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300">
+                        Get in Touch
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sm:flex sm:justify-center text-center">
+            <div class="flex flex-col bg-[#FFDD50] sm:grow sm:basis-0">
+                <div class="p-4 md:p-12">
+                  <h3 class="text-base font-bold text-gray-800">
+                    Alex Miers L.L.B., L.L.M., Ph.D.
+                  </h3>
+                  <p class="mt-1 text-xl">
+                    Advocacy Specialist
+                  </p>
+                </div>
+                <img class="w-full h-auto" src="./public/img/people-one.jpg" alt="Image Description">
+            </div>
+            <div class="flex flex-col bg-[#FFDD50] sm:shrink-0 sm:grow sm:basis-0 ">
+                <div class="p-4 md:p-12">
+                    <h3 class="text-base font-bold text-gray-80">
+                        Victoria Morgan L.L.B., L.L.M., Ph.D.
+                    </h3>
+                    <p class="mt-1 text-xl">
+                        Criminal Cases Specialist
+                      </p>
+                </div>
+                <img class="w-full h-auto" src="./public/img/people-two.jpg" alt="Image Description">
+            </div>
+            
+            <div class="flex flex-col bg-[#FFDD50] sm:shrink-0 sm:grow sm:basis-0 ">
+                <div class="p-4 md:p-12">
+                  <h3 class="text-base font-bold text-gray-800">
+                    Joseph Federer L.L.B., M.B.A.
+                  </h3>
+                  <p class="mt-1 text-xl">
+                    Legal Consultant
+                  </p>
+                </div>
+                <img class="w-full h-auto" src="./public/img/people-three.jpg" alt="Image Description">
+            </div>
+            
+            <div class="flex flex-col bg-[#FFDD50] sm:shrink-0 sm:grow sm:basis-0 ">
+                <div class="p-4 md:p-12">
+                  <h3 class="text-base font-bold text-gray-800">
+                    Laura Ann L.L.B., L.L.M.
+                  </h3>
+                  <p class="mt-1 text-xl">
+                    Taxes Specialist
+                  </p>
+                </div>
+                <img class="w-full h-auto " src="./public/img/people-four.jpg" alt="Image Description">
+            </div>
+        </div>
+        
+        <div class="flex bg-blue-100 w-full">
+            <div class="flex bg-[#0A0A0A] gap-5 justify-center items-center content-center flex-wrap w-full p-2 md:p-10 lg:p-16 xl:p-24 2xl:py-32 2xl:px-96">
+                <div class="flex py-2 px-4 justify-center items-center gap-1 radius-3x rounded-lg bg-[#1E1E1E]">
+                    <img src="./public/img/Icon/archive-icon.png" alt="">
+                    <p class="text-white">Advocacy</p>
+                </div>
+                <div class="flex py-2 px-4 justify-center items-center gap-1 radius-3x rounded-lg bg-[#1E1E1E]">
+                    <img src="./public/img/Icon/inbox.png" alt="">
+                    <p class="text-white">Corporate Legal Consultants Service</p>
+                </div>
+                <div class="flex py-2 px-4 justify-center items-center gap-1 radius-3x rounded-lg bg-[#1E1E1E]">
+                    <img src="./public/img/Icon/scale.png" alt="">
+                    <p class="text-white">Criminal Cases</p>
+                </div>
+                <div class="flex py-2 px-4 justify-center items-center gap-1 radius-3x rounded-lg bg-[#1E1E1E]">
+                    <img src="./public/img/Icon/heart.png" alt="">
+                    <p class="text-white">Marriage</p>
+                </div>
+                <div class="flex py-2 px-4 justify-center items-center gap-1 radius-3x rounded-lg bg-[#1E1E1E]">
+                    <img src="./public/img/Icon/currency-dollar.png" alt="">
+                    <p class="text-white">Financial Credit</p>
+                </div>
+                <div class="flex py-2 px-4 justify-center items-center gap-1 radius-3x rounded-lg bg-[#1E1E1E]">
+                    <img src="./public/img/Icon/document-search.png" alt="">
+                    <p class="text-white">Company Acquisition and Merger</p>
+                </div>
+                <div class="flex py-2 px-4 justify-center items-center gap-1 radius-3x rounded-lg bg-[#1E1E1E]">
+                    <img src="./public/img/Icon/fire.png" alt="">
+                    <p class="text-white">Fraud and Embezzlement</p>
+                </div>
+                <div class="flex py-2 px-4 justify-center items-center gap-1 radius-3x rounded-lg bg-[#1E1E1E]">
+                    <img src="./public/img/Icon/document-duplicate.png" alt="">
+                    <p class="text-white">Taxes</p>
+                </div>
+                <div class="flex py-2 px-4 justify-center items-center gap-1 radius-3x rounded-lg bg-[#1E1E1E]">
+                    <img src="./public/img/Icon/flag.png" alt="">
+                    <p class="text-white">Money Laundering</p>
+                </div>
+            </div>
+        </div>
+
+        <div href="#" class="flex flex-col items-center bg-[#0A0A0A] border-t-2 md:flex-row border-t-[#404040]  ">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:max-w-3xl md:rounded-none md:rounded-s-lg" src="./public/img/profile/profile-one.jpg" alt="">
+            <div class="flex flex-col justify-between px-6 lg:px-16 py-10 leading-normal self-start font-sans">
+                <h5 class="mb-2 text-3xl font-semibold tracking-tight text-white">Alex Miers L.L.B., L.L.M., Ph.D.</h5>
+                <h4 class="mb-6 text-4xl font-medium tracking-tight text-white">Advocacy Specialist</h4>
+                <p class="mb-3 font-normal text-white max-w-96">With decades of experience in the legal field, Alex Miers is renowned for his expertise and high success rate in advocacy. Armed with a Bachelor of Laws (LLB), a Master of Laws (LLM), and a Doctor of Philosophy (PhD), Alex possesses a deep understanding of legal principles and a sharp analytical mind.</p>
+                <p class="font-normal text-white max-w-96">Throughout his career, Alex has consistently demonstrated his ability to navigate complex legal issues and deliver favorable outcomes for his clients. Whether it's representing individuals or organizations, Alex is known for his strategic approach, meticulous attention to detail, and unwavering commitment to justice.</p>
+            </div>
+        </div>
+        
+        <div href="#" class="flex flex-col items-center bg-[#0A0A0A] border-t-2 md:flex-row border-t-[#404040]  ">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:max-w-3xl md:rounded-none md:rounded-s-lg" src="./public/img/profile/profile-two.jpg" alt="">
+            <div class="flex flex-col justify-between px-6 lg:px-16 py-10 leading-normal self-start font-sans">
+                <h5 class="mb-2 text-3xl font-semibold tracking-tight text-white">Victoria Morgan L.L.B., L.L.M., Ph.D.</h5>
+                <h4 class="mb-6 text-4xl font-medium tracking-tight text-white">Criminal Cases Specialist</h4>
+                <p class="mb-3 font-normal text-white max-w-96">Victoria Morgan is a seasoned legal professional specializing in criminal law. With a wealth of experience in the field, Victoria is recognized for her expertise in navigating the complexities of criminal cases and delivering favorable outcomes for her clients.</p>
+                <p class="font-normal text-white max-w-96"> Her dedication to justice and unwavering commitment to her clients have earned her a reputation as a trusted advocate in the legal community.</p>
+            </div>
+        </div>
+
+        <div href="#" class="flex flex-col items-center bg-[#0A0A0A] border-t-2 md:flex-row border-t-[#404040]  ">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:max-w-3xl md:rounded-none md:rounded-s-lg" src="./public/img/profile/profile-three.jpg" alt="">
+            <div class="flex flex-col justify-between px-6 lg:px-16 py-10 leading-normal self-start font-sans">
+                <h5 class="mb-2 text-3xl font-semibold tracking-tight text-white">Joseph Federer L.L.B., M.B.A.</h5>
+                <h4 class="mb-6 text-4xl font-medium tracking-tight text-white">Legal Consultant</h4>
+                <p class="mb-3 font-normal text-white max-w-96">Joseph is a Legal Consultant with a keen eye for detail and a deep understanding of the intricacies of the law, Joseph excels in analyzing complex legal issues, identifying potential risks, and developing effective solutions to achieve his clients' objectives. Whether it's navigating regulatory compliance, drafting contracts, or resolving disputes, Joseph's pragmatic approach and sharp legal acumen make him a trusted advisor in the legal community.</p>
+                <p class="font-normal text-white max-w-96">With an extensive background in law and a wealth of practical experience, Joseph offers valuable counsel to individuals, businesses, and organizations seeking clarity and direction in legal affairs.</p>
+            </div>
+        </div>
+
+        <div href="#" class="flex flex-col items-center bg-[#0A0A0A] border-t-2 md:flex-row border-t-[#404040]  ">
+            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:max-w-3xl md:rounded-none md:rounded-s-lg" src="./public/img/profile/profile-four.jpg" alt="">
+            <div class="flex flex-col justify-between px-6 lg:px-16 py-10 leading-normal self-start font-sans">
+                <h5 class="mb-2 text-3xl font-semibold tracking-tight text-white">Laura Ann L.L.B., L.L.M.</h5>
+                <h4 class="mb-6 text-4xl font-medium tracking-tight text-white">Taxes Specialist</h4>
+                <p class="mb-3 font-normal text-white max-w-96">Laura Ann is a highly skilled Taxes Specialist with a passion for helping individuals and businesses navigate the complexities of tax laws and regulations. With years of experience in the field, Laura possesses a deep understanding of tax codes and compliance requirements, allowing her to provide expert guidance and tailored solutions to her clients.</p>
+                <p class="font-normal text-white max-w-96">With Laura Ann on your side, you can trust that your tax matters are in capable hands. Her dedication to providing exceptional service and personalized advice ensures that clients receive the guidance and support they need to navigate the ever-changing tax landscape effectively.</p>
+            </div>
+        </div>
+
+        <section class="bg-[#FFDD50]">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                <div class="max-w-screen-lg text-[#404040] sm:text-lg p-1">
+                    <h2 class="mb-3 text-4xl tracking-tight font-semibold text-gray-900">About Us</h2>
+                    <p class="mb-6 font-medium">Niskala Law Firm & Associates stands as a beacon of legal excellence, boasting decades of experience and a track record of achieving favorable outcomes for clients across a diverse spectrum of cases. With a team comprised of seasoned legal professionals hailing from various backgrounds and expertise, Niskala is well-equipped to handle the complex legal needs of both businesses and individuals.</p>
+                    <p class="mb-4 lg:mb-16 font-medium">Our firm prides itself on delivering results-driven representation, grounded in a deep understanding of the law and a commitment to advocating tirelessly for our clients' rights and interests. Whether navigating intricate corporate transactions or representing individuals in personal legal matters, Niskala's attorneys bring a wealth of knowledge, skill, and dedication to every case they undertake. With Niskala Law Firm by your side, you can trust that your legal matters are in capable hands, and your objectives will be pursued with unwavering determination and expertise.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#0A0A0A]">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl lg:pb-16 lg:pt-12 lg:px-6">
+                <div class="max-w-screen-lg text-white sm:text-lg p-1">
+                    <h2 class="mb-3 text-4xl tracking-tight font-semibold text-white">Based In</h2>
+                    <p class="mb-12 font-medium max-w-96">The Special City of Jakarta - Indonesia</p>
+                </div>
+            </div>
+        </section>
+        <script src="./src/js/script.js" ></script>
+    </body>
+</html>
