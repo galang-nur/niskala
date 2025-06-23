@@ -22,7 +22,7 @@
                     </svg>
                 </button>
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-sm">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-sm" style="backdrop-filter: blur(10px);">
                         <li>
                             <button onclick="backToTopScroll()" class="block py-2 px-3 text-white  rounded md:bg-transparent" aria-current="page">HOME</button>
                         </li>
@@ -204,5 +204,13 @@
             </div>
         </section>
         <script src="./src/js/script.js" ></script>
+        <script>
+        const toggleButton = document.querySelector('[data-collapse-toggle="navbar-default"]');
+        const navbar = document.getElementById('navbar-default');
+
+        toggleButton.addEventListener('click', () => {
+            navbar.classList.toggle('hidden');
+        });
+        </script>
     </body>
 </html>
