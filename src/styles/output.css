@@ -1217,3 +1217,13 @@ video {
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;
 }
+
+.backdrop-filter {
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 720px) {
+  .backdrop-filter {
+    backdrop-filter: blur(0);
+  }
+}
